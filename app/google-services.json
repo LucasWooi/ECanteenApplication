@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1065017597979",
+    "project_id": "ecanteen-44257",
+    "storage_bucket": "ecanteen-44257.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065017597979:android:49dd2750031d3b8cea98be",
+        "android_client_info": {
+          "package_name": "com.example.ecanteenapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1065017597979-teb00qvsshjmdj4d3irpal9b4i1gl0b0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuXb76E_fsoktQTSv11z6AhvlDrj-VSl4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1065017597979-teb00qvsshjmdj4d3irpal9b4i1gl0b0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

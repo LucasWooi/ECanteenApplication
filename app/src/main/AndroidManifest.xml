@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ecanteenapplication">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ECanteenApplication">
+        <activity
+            android:name=".CustomerSide.ResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerSide.TopupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Restaurants.SalesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerSide.RegisterFromStudentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerSide.SummaryOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerSide.ShowFoodDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerSide.UpdateFromStudentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerSide.ProfilePageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerSide.OrderHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerSide.ResFoodListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerSide.HomePageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Foods.UpdateFoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Foods.AddNewFoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Foods.FoodDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Foods.FoodListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RestaurantListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RestaurantHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RestaurantLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

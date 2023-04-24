@@ -1,0 +1,234 @@
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CustomerSide.UpdateFromStudentActivity">
+
+        <TextView
+            android:id="@+id/background_rec"
+            android:layout_width="349dp"
+            android:layout_height="665dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="128dp"
+            android:layout_height="117dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="224dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/CamImg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.602"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+
+        <TextView
+            android:id="@+id/displayID"
+            android:layout_width="204dp"
+            android:layout_height="34dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="68dp"
+            android:text="-"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/EditName"
+            app:layout_constraintEnd_toEndOf="@+id/background_rec" />
+
+        <TextView
+            android:id="@+id/profilePhone"
+            android:layout_width="172dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="72dp"
+            android:text="Phone No :       "
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/profileWallet"
+            app:layout_constraintStart_toStartOf="@+id/background_rec" />
+
+        <TextView
+            android:id="@+id/profileConfirmPass"
+            android:layout_width="117dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="60dp"
+            android:text="Confirm Password :       "
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/background_rec"
+            app:layout_constraintStart_toStartOf="@+id/background_rec" />
+
+        <TextView
+            android:id="@+id/profilePass"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="132dp"
+            android:text="Password :       "
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/background_rec"
+            app:layout_constraintStart_toStartOf="@+id/background_rec" />
+
+        <TextView
+            android:id="@+id/profileWallet"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="196dp"
+            android:text="Balance :       "
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/background_rec"
+            app:layout_constraintStart_toStartOf="@+id/background_rec" />
+
+        <TextView
+            android:id="@+id/displayBalance"
+            android:layout_width="204dp"
+            android:layout_height="34dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="204dp"
+            android:text="-"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/background_rec"
+            app:layout_constraintEnd_toEndOf="@+id/background_rec" />
+
+        <EditText
+            android:id="@+id/EditPhone"
+            android:layout_width="204dp"
+            android:layout_height="42dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="64dp"
+            android:hint="Phone Number"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/displayBalance"
+            app:layout_constraintEnd_toEndOf="@+id/background_rec" />
+
+        <TextView
+            android:id="@+id/profileEmail"
+            android:layout_width="140dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="52dp"
+            android:text="Email :       "
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/profilePhone"
+            app:layout_constraintStart_toStartOf="@+id/background_rec" />
+
+        <EditText
+            android:id="@+id/EditEmail"
+            android:layout_width="206dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="52dp"
+            android:hint="Email"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/EditPhone"
+            app:layout_constraintEnd_toEndOf="@+id/background_rec" />
+
+        <TextView
+            android:id="@+id/profileName"
+            android:layout_width="140dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="56dp"
+            android:text="Name :       "
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/profileEmail"
+            app:layout_constraintStart_toStartOf="@+id/background_rec" />
+
+        <TextView
+            android:id="@+id/profileID"
+            android:layout_width="126dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="68dp"
+            android:text="Student ID :       "
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/profileName"
+            app:layout_constraintStart_toStartOf="@+id/background_rec" />
+
+        <EditText
+            android:id="@+id/EditName"
+            android:layout_width="210dp"
+            android:layout_height="49dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="56dp"
+            android:hint="Student Name"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/EditEmail"
+            app:layout_constraintEnd_toEndOf="@+id/background_rec" />
+
+        <EditText
+            android:id="@+id/EditPass"
+            android:layout_width="204dp"
+            android:layout_height="42dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="65dp"
+            android:hint="Password"
+            android:textSize="20sp"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toBottomOf="@+id/EditConfirmPass"
+            app:layout_constraintEnd_toEndOf="@+id/background_rec" />
+
+        <EditText
+            android:id="@+id/EditConfirmPass"
+            android:layout_width="204dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="92dp"
+            android:layout_marginEnd="24dp"
+            android:hint="Confirm Password"
+            android:textSize="20sp"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="@+id/background_rec"
+            app:layout_constraintTop_toBottomOf="@+id/displayBalance" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="7dp"
+            android:text="Cancel"
+            app:backgroundTint="@null"
+            app:layout_constraintStart_toStartOf="@+id/background_rec"
+            app:layout_constraintTop_toBottomOf="@+id/profileConfirmPass" />
+
+        <Button
+            android:id="@+id/confirmButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="74dp"
+            android:text="Confirm"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="@+id/background_rec"
+            app:layout_constraintTop_toBottomOf="@+id/EditConfirmPass" />
+
+        <Button
+            android:id="@+id/editImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="18dp"
+            android:text="Select Image"
+            app:backgroundTint="@null"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

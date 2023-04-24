@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+        <Button
+            android:id="@+id/studLoginBtn"
+            android:layout_width="131dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="46dp"
+            android:text="Student"
+            android:backgroundTint="#0099FF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <Button
+            android:id="@+id/restauLoginBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="139dp"
+            android:layout_marginTop="41dp"
+            android:text="Restaurant"
+            android:backgroundTint="#0099FF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/studLoginBtn" />
+
+        <Button
+            android:id="@+id/adminLoginBtn"
+            android:layout_width="134dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="138dp"
+            android:layout_marginTop="38dp"
+            android:text="Admin"
+            android:backgroundTint="#0099FF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restauLoginBtn" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

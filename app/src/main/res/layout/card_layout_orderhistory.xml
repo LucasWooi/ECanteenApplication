@@ -1,0 +1,92 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".CustomerSide.OrderHistoryAdapter"
+        android:id="@+id/card_view_3"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="#FFFF99"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="3dp"
+        app:contentPadding="4dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="393dp"
+            android:layout_height="253dp"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/getFoodImg"
+                android:layout_width="82dp"
+                android:layout_height="80dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/foodName"
+                android:layout_width="238dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="16dp"
+                android:text="-"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.078" />
+
+            <TextView
+                android:id="@+id/foodPrice"
+                android:layout_width="188dp"
+                android:layout_height="49dp"
+                android:layout_marginEnd="176dp"
+                android:text="-"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.622" />
+
+            <TextView
+                android:id="@+id/totalpay"
+                android:layout_width="188dp"
+                android:layout_height="49dp"
+                android:layout_marginEnd="176dp"
+                android:text="Total Payment: "
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/orderQty"
+                android:layout_width="98dp"
+                android:layout_height="44dp"
+                android:layout_marginEnd="48dp"
+                android:text="-"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.612" />
+
+            <TextView
+                android:id="@+id/showAmount"
+                android:layout_width="98dp"
+                android:layout_height="44dp"
+                android:layout_marginEnd="48dp"
+                android:text="-"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.98" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>

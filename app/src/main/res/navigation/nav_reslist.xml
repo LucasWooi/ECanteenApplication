@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_reslist"
+    app:startDestination="@id/restaurantListFragment2">
+
+    <fragment
+        android:id="@+id/restaurantListFragment2"
+        android:name="com.example.ecanteenapplication.Restaurants.RestaurantListFragment"
+        android:label="RestaurantListFragment" >
+        <action
+            android:id="@+id/action_restaurantListFragment2_to_restaurantDetailsFragment"
+            app:destination="@id/restaurantDetailsFragment" />
+        <action
+            android:id="@+id/action_restaurantListFragment2_to_registerRestaurantFragment"
+            app:destination="@id/registerRestaurantFragment" />
+        <action
+            android:id="@+id/action_restaurantListFragment2_to_adminHomeActivity3"
+            app:destination="@id/adminHomeActivity3" />
+    </fragment>
+    <fragment
+        android:id="@+id/restaurantDetailsFragment"
+        android:name="com.example.ecanteenapplication.Restaurants.RestaurantDetailsFragment"
+        android:label="RestaurantDetailsFragment" >
+        <action
+            android:id="@+id/action_restaurantDetailsFragment_to_restaurantListFragment2"
+            app:destination="@id/restaurantListFragment2" />
+        <argument
+            android:name="resIndex"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_restaurantDetailsFragment_to_updateRestaurantFragment"
+            app:destination="@id/updateRestaurantFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerRestaurantFragment"
+        android:name="com.example.ecanteenapplication.Restaurants.RegisterRestaurantFragment"
+        android:label="register_restaurant_fragment"
+        tools:layout="@layout/register_restaurant_fragment" >
+        <action
+            android:id="@+id/action_registerRestaurantFragment_to_restaurantListFragment2"
+            app:destination="@id/restaurantListFragment2" />
+    </fragment>
+    <activity
+        android:id="@+id/adminHomeActivity3"
+        android:name="com.example.ecanteenapplication.AdminHomeActivity"
+        android:label="AdminHomeActivity" />
+    <fragment
+        android:id="@+id/updateRestaurantFragment"
+        android:name="com.example.ecanteenapplication.Restaurants.UpdateRestaurantFragment"
+        android:label="update_restaurant_fragment"
+        tools:layout="@layout/update_restaurant_fragment" >
+        <action
+            android:id="@+id/action_updateRestaurantFragment_to_restaurantDetailsFragment"
+            app:destination="@id/restaurantDetailsFragment" />
+        <argument
+            android:name="getRestaurantIndex"
+            app:argType="integer" />
+    </fragment>
+</navigation>

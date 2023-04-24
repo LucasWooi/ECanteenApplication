@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Foods.AddNewFoodActivity">
+
+        <TextView
+            android:id="@+id/background_rec"
+            android:layout_width="351dp"
+            android:layout_height="527dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.615"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="399dp"
+            android:layout_height="97dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/displayID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="24dp"
+            android:text="-"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/profileID"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/displayRes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="26dp"
+            android:text="-"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/profileID"
+            app:layout_constraintTop_toBottomOf="@+id/enterPrice" />
+
+        <TextView
+            android:id="@+id/profileEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="36dp"
+            android:text="Price :       "
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/background_rec"
+            app:layout_constraintTop_toBottomOf="@+id/profileName" />
+
+        <TextView
+            android:id="@+id/profileRes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:text="Restaurant ID :       "
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/background_rec"
+            app:layout_constraintTop_toBottomOf="@+id/profileEmail" />
+
+        <TextView
+            android:id="@+id/profileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="36dp"
+            android:text="Food Name :       "
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/background_rec"
+            app:layout_constraintTop_toBottomOf="@+id/profileID" />
+
+        <TextView
+            android:id="@+id/profileID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Food ID :       "
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/background_rec"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <Button
+            android:id="@+id/addNewFoodBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="188dp"
+            android:layout_marginBottom="12dp"
+            android:text="Add"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="@+id/background_rec"
+            app:layout_constraintStart_toStartOf="@+id/background_rec" />
+
+        <Button
+            android:id="@+id/selectImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="96dp"
+            android:layout_marginBottom="104dp"
+            android:text="Select Image"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="@+id/background_rec"
+            app:layout_constraintStart_toStartOf="@+id/background_rec" />
+
+        <Button
+            android:id="@+id/BackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginBottom="12dp"
+            android:text="Back"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="@+id/background_rec"
+            app:layout_constraintStart_toStartOf="@+id/background_rec" />
+
+        <EditText
+            android:id="@+id/enterName"
+            android:layout_width="167dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="84dp"
+            android:layout_marginEnd="44dp"
+            android:ems="10"
+            android:hint="Food Name"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/background_rec" />
+
+        <EditText
+            android:id="@+id/enterPrice"
+            android:layout_width="159dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="52dp"
+            android:ems="10"
+            android:hint="Food Price"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enterName" />
+
+        <ImageView
+            android:id="@+id/getFoodImage"
+            android:layout_width="148dp"
+            android:layout_height="89dp"
+            android:layout_marginEnd="108dp"
+            app:layout_constraintBottom_toTopOf="@+id/selectImage"
+            app:layout_constraintEnd_toEndOf="@+id/background_rec" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

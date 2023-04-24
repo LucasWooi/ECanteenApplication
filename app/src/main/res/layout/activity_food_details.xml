@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Foods.FoodDetailsFragment">
+
+        <TextView
+            android:id="@+id/background_rec"
+            android:layout_width="334dp"
+            android:layout_height="564dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.615"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="399dp"
+            android:layout_height="97dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/displayID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="24dp"
+            android:text="-"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/foodID"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/displayRes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="43dp"
+            android:text="-"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/foodID"
+            app:layout_constraintTop_toBottomOf="@+id/displayPrice" />
+
+        <TextView
+            android:id="@+id/foodPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="36dp"
+            android:text="Price :       "
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/background_rec"
+            app:layout_constraintTop_toBottomOf="@+id/foodName" />
+
+        <TextView
+            android:id="@+id/resID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="43dp"
+            android:text="Restaurant ID:       "
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/background_rec"
+            app:layout_constraintTop_toBottomOf="@+id/foodPrice" />
+
+        <TextView
+            android:id="@+id/displayPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="36dp"
+            android:text="-"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/foodID"
+            app:layout_constraintTop_toBottomOf="@+id/displayName" />
+
+        <TextView
+            android:id="@+id/foodName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="36dp"
+            android:text="Food Name :       "
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/background_rec"
+            app:layout_constraintTop_toBottomOf="@+id/foodID" />
+
+        <TextView
+            android:id="@+id/foodID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Food ID :       "
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/background_rec"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/displayName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="36dp"
+            android:text="-"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/foodID"
+            app:layout_constraintTop_toBottomOf="@+id/displayID" />
+
+        <Button
+            android:id="@+id/confirmButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="116dp"
+            android:layout_marginBottom="12dp"
+            android:text="Confirm"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="@+id/background_rec"
+            app:layout_constraintStart_toStartOf="@+id/background_rec" />
+
+        <Button
+            android:id="@+id/updateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="80dp"
+            android:text="Update"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="@+id/background_rec"
+            app:layout_constraintStart_toStartOf="@+id/background_rec" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginBottom="80dp"
+            android:text="Delete"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="@+id/background_rec"
+            app:layout_constraintStart_toStartOf="@+id/background_rec" />
+
+        <ImageView
+            android:id="@+id/getFoodImage"
+            android:layout_width="148dp"
+            android:layout_height="89dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="188dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/background_rec"
+            app:layout_constraintEnd_toEndOf="@+id/background_rec" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

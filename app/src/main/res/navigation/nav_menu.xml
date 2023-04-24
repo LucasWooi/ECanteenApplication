@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_menu"
+    app:startDestination="@id/studentListFragment">
+
+    <fragment
+        android:id="@+id/studentListFragment"
+        android:name="com.example.ecanteenapplication.Student.StudentListFragment"
+        android:label="StudentListFragment" >
+        <action
+            android:id="@+id/action_studentListFragment_to_studentDetailsFragment"
+            app:destination="@id/studentDetailsFragment" />
+        <action
+            android:id="@+id/action_studentListFragment_to_registerStudentFragment"
+            app:destination="@id/registerStudentFragment" />
+        <action
+            android:id="@+id/action_studentListFragment_to_adminHomeActivity"
+            app:destination="@id/adminHomeActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentDetailsFragment"
+        android:name="com.example.ecanteenapplication.Student.StudentDetailsFragment"
+        android:label="student_details_fragment"
+        tools:layout="@layout/student_details_fragment" >
+        <action
+            android:id="@+id/action_studentDetailsFragment_to_studentListFragment"
+            app:destination="@id/studentListFragment" />
+        <argument
+            android:name="studIndex"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_studentDetailsFragment_to_updateStudentFragment"
+            app:destination="@id/updateStudentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerStudentFragment"
+        android:name="com.example.ecanteenapplication.Student.RegisterStudentFragment"
+        android:label="register_student_fragment"
+        tools:layout="@layout/register_student_fragment" >
+        <action
+            android:id="@+id/action_registerStudentFragment_to_studentListFragment"
+            app:destination="@id/studentListFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/adminHomeActivity"
+        android:name="com.example.ecanteenapplication.AdminHomeActivity"
+        android:label="AdminHomeActivity" />
+    <fragment
+        android:id="@+id/updateStudentFragment"
+        android:name="com.example.ecanteenapplication.Student.UpdateStudentFragment"
+        android:label="UpdateStudentFragment" >
+        <argument
+            android:name="getStudentIndex"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_updateStudentFragment_to_studentDetailsFragment"
+            app:destination="@id/studentDetailsFragment" />
+    </fragment>
+</navigation>

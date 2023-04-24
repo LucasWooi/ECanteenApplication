@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CustomerSide.SummaryOrderActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="207dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/fName"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:text="   Food Name"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/showName"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:text="-"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/fPrice"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:text="   Food Price"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/showPrice"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:text="-"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/fQty"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:text="   Order Quantity"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/showQty"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:text="-"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/blank"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:text="_______________________________________________"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:text="   Total Payment"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/showPay"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:text="-"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/payButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:text="Pay" />
+</LinearLayout>
+</layout>
