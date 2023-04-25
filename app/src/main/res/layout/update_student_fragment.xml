@@ -52,6 +52,7 @@
             android:layout_marginTop="20dp"
             android:text="RM0"
             android:textSize="16sp"
+            android:textColor="#000000"
             app:layout_constraintStart_toEndOf="@+id/profileID"
             app:layout_constraintTop_toBottomOf="@+id/enterPhone" />
 
@@ -63,6 +64,7 @@
             android:layout_marginTop="36dp"
             android:text="Email address :       "
             android:textSize="16sp"
+            android:textColor="#000000"
             app:layout_constraintStart_toStartOf="@+id/background_rec"
             app:layout_constraintTop_toBottomOf="@+id/profileName" />
 
@@ -74,6 +76,7 @@
             android:layout_marginTop="36dp"
             android:text="Phone Number :       "
             android:textSize="16sp"
+            android:textColor="#000000"
             app:layout_constraintStart_toStartOf="@+id/background_rec"
             app:layout_constraintTop_toBottomOf="@+id/profileEmail" />
 
@@ -85,6 +88,7 @@
             android:layout_marginTop="36dp"
             android:text="Wallet Balance :       "
             android:textSize="16sp"
+            android:textColor="#000000"
             app:layout_constraintStart_toStartOf="@+id/background_rec"
             app:layout_constraintTop_toBottomOf="@+id/profilePhone" />
 
@@ -96,6 +100,7 @@
             android:layout_marginTop="36dp"
             android:text="Student Name :       "
             android:textSize="16sp"
+            android:textColor="#000000"
             app:layout_constraintStart_toStartOf="@+id/background_rec"
             app:layout_constraintTop_toBottomOf="@+id/profileID" />
 
@@ -107,6 +112,7 @@
             android:layout_marginTop="24dp"
             android:text="Student ID :       "
             android:textSize="16sp"
+            android:textColor="#000000"
             app:layout_constraintStart_toStartOf="@+id/background_rec"
             app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -118,6 +124,7 @@
             android:layout_marginTop="412dp"
             android:text="Password :       "
             android:textSize="16sp"
+            android:textColor="#000000"
             app:layout_constraintStart_toStartOf="@+id/background_rec"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -129,6 +136,7 @@
             android:layout_marginTop="464dp"
             android:text="Confirm Password :       "
             android:textSize="16sp"
+            android:textColor="#000000"
             app:layout_constraintStart_toStartOf="@+id/background_rec"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -174,6 +182,7 @@
             android:ems="10"
             android:hint="Name"
             android:inputType="textPersonName"
+            android:textColor="#000000"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/background_rec" />
 
@@ -186,6 +195,7 @@
             android:ems="10"
             android:hint="Email"
             android:inputType="textPersonName"
+            android:textColor="#000000"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/enterName" />
 
@@ -198,6 +208,7 @@
             android:ems="10"
             android:hint="Phone Number"
             android:inputType="textPersonName"
+            android:textColor="#000000"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/enterEmail" />
 
@@ -210,6 +221,7 @@
             android:ems="10"
             android:hint="Password"
             android:inputType="textPassword"
+            android:textColor="#000000"
             app:layout_constraintEnd_toEndOf="@+id/background_rec"
             app:layout_constraintTop_toBottomOf="@+id/enterPhone" />
 
@@ -222,6 +234,7 @@
             android:ems="10"
             android:hint="Confirm Password"
             android:inputType="textPassword"
+            android:textColor="#000000"
             app:layout_constraintEnd_toEndOf="@+id/background_rec"
             app:layout_constraintTop_toBottomOf="@+id/enterPass" />
 

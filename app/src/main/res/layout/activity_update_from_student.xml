@@ -14,6 +14,7 @@
             android:layout_marginTop="15dp"
             android:layout_marginEnd="6dp"
             android:background="@drawable/background"
+            android:textColor="#000000"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.487"
             app:layout_constraintStart_toStartOf="parent"
@@ -60,6 +61,7 @@
             android:layout_marginBottom="72dp"
             android:text="Phone No :       "
             android:textSize="20sp"
+            android:textColor="#000000"
             app:layout_constraintBottom_toBottomOf="@+id/profileWallet"
             app:layout_constraintStart_toStartOf="@+id/background_rec" />
 
@@ -71,6 +73,7 @@
             android:layout_marginBottom="60dp"
             android:text="Confirm Password :       "
             android:textSize="20sp"
+            android:textColor="#000000"
             app:layout_constraintBottom_toBottomOf="@+id/background_rec"
             app:layout_constraintStart_toStartOf="@+id/background_rec" />
 
@@ -82,6 +85,7 @@
             android:layout_marginBottom="132dp"
             android:text="Password :       "
             android:textSize="20sp"
+            android:textColor="#000000"
             app:layout_constraintBottom_toBottomOf="@+id/background_rec"
             app:layout_constraintStart_toStartOf="@+id/background_rec" />
 
@@ -93,6 +97,7 @@
             android:layout_marginBottom="196dp"
             android:text="Balance :       "
             android:textSize="20sp"
+            android:textColor="#000000"
             app:layout_constraintBottom_toBottomOf="@+id/background_rec"
             app:layout_constraintStart_toStartOf="@+id/background_rec" />
 
@@ -104,6 +109,7 @@
             android:layout_marginBottom="204dp"
             android:text="-"
             android:textSize="20sp"
+            android:textColor="#000000"
             app:layout_constraintBottom_toBottomOf="@+id/background_rec"
             app:layout_constraintEnd_toEndOf="@+id/background_rec" />
 
@@ -115,6 +121,7 @@
             android:layout_marginBottom="64dp"
             android:hint="Phone Number"
             android:textSize="20sp"
+            android:textColor="#000000"
             app:layout_constraintBottom_toBottomOf="@+id/displayBalance"
             app:layout_constraintEnd_toEndOf="@+id/background_rec" />
 
@@ -126,6 +133,7 @@
             android:layout_marginBottom="52dp"
             android:text="Email :       "
             android:textSize="20sp"
+            android:textColor="#000000"
             app:layout_constraintBottom_toBottomOf="@+id/profilePhone"
             app:layout_constraintStart_toStartOf="@+id/background_rec" />
 
@@ -137,6 +145,7 @@
             android:layout_marginBottom="52dp"
             android:hint="Email"
             android:textSize="20sp"
+            android:textColor="#000000"
             app:layout_constraintBottom_toBottomOf="@+id/EditPhone"
             app:layout_constraintEnd_toEndOf="@+id/background_rec" />
 
@@ -148,6 +157,7 @@
             android:layout_marginBottom="56dp"
             android:text="Name :       "
             android:textSize="20sp"
+            android:textColor="#000000"
             app:layout_constraintBottom_toBottomOf="@+id/profileEmail"
             app:layout_constraintStart_toStartOf="@+id/background_rec" />
 
@@ -159,6 +169,7 @@
             android:layout_marginBottom="68dp"
             android:text="Student ID :       "
             android:textSize="20sp"
+            android:textColor="#000000"
             app:layout_constraintBottom_toBottomOf="@+id/profileName"
             app:layout_constraintStart_toStartOf="@+id/background_rec" />
 
@@ -170,6 +181,7 @@
             android:layout_marginBottom="56dp"
             android:hint="Student Name"
             android:textSize="20sp"
+            android:textColor="#000000"
             app:layout_constraintBottom_toBottomOf="@+id/EditEmail"
             app:layout_constraintEnd_toEndOf="@+id/background_rec" />
 
@@ -182,6 +194,7 @@
             android:hint="Password"
             android:textSize="20sp"
             android:inputType="textPassword"
+            android:textColor="#000000"
             app:layout_constraintBottom_toBottomOf="@+id/EditConfirmPass"
             app:layout_constraintEnd_toEndOf="@+id/background_rec" />
 
@@ -194,6 +207,7 @@
             android:hint="Confirm Password"
             android:textSize="20sp"
             android:inputType="textPassword"
+            android:textColor="#000000"
             app:layout_constraintEnd_toEndOf="@+id/background_rec"
             app:layout_constraintTop_toBottomOf="@+id/displayBalance" />
 

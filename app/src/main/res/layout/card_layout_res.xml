@@ -10,7 +10,7 @@
         tools:context=".Restaurants.RestaurantListAdapter"
         android:id="@+id/card_view_3"
         android:layout_margin="5dp"
-        app:cardBackgroundColor="#FFFF99"
+        app:cardBackgroundColor="#6F8FAF"
         app:cardCornerRadius="12dp"
         app:cardElevation="3dp"
         app:contentPadding="4dp">
@@ -29,6 +29,7 @@
                 android:layout_marginBottom="88dp"
                 android:text="Wallet Balance : "
                 android:textSize="20sp"
+                android:textColor="#000000"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/card_PhoneNumber" />
 
@@ -39,6 +40,7 @@
                 android:layout_marginTop="17dp"
                 android:textAlignment="viewStart"
                 android:textSize="18sp"
+                android:textColor="#000000"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/card_phone" />
 
@@ -49,6 +51,7 @@
                 android:layout_marginTop="16dp"
                 android:text="Phone Number : "
                 android:textSize="20sp"
+                android:textColor="#000000"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/card_EmailAdd" />
 
@@ -59,6 +62,7 @@
                 android:layout_marginTop="16dp"
                 android:textAlignment="viewStart"
                 android:textSize="18sp"
+                android:textColor="#000000"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/card_email" />
 
@@ -69,6 +73,7 @@
                 android:layout_marginTop="16dp"
                 android:text="Email Address : "
                 android:textSize="20sp"
+                android:textColor="#000000"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/card_OwnerName" />
 
@@ -79,6 +84,7 @@
                 android:layout_marginTop="16dp"
                 android:textAlignment="viewStart"
                 android:textSize="18sp"
+                android:textColor="#000000"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/card_ownName" />
 
@@ -89,6 +95,7 @@
                 android:layout_marginTop="15dp"
                 android:text="Owner Name : "
                 android:textSize="20sp"
+                android:textColor="#000000"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/card_ResName" />
 
@@ -99,6 +106,7 @@
                 android:layout_marginTop="17dp"
                 android:textAlignment="viewStart"
                 android:textSize="18sp"
+                android:textColor="#000000"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/card_name" />
 
@@ -109,6 +117,7 @@
                 android:layout_marginTop="16dp"
                 android:text="Restaurant Name : "
                 android:textSize="20sp"
+                android:textColor="#000000"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/card_ResID" />
 
@@ -119,6 +128,7 @@
                 android:layout_marginTop="18dp"
                 android:textAlignment="viewStart"
                 android:textSize="18sp"
+                android:textColor="#000000"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/card_ID" />
 
@@ -128,6 +138,7 @@
                 android:layout_height="27dp"
                 android:text="Restaurant ID : "
                 android:textSize="20sp"
+                android:textColor="#000000"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -137,6 +148,7 @@
                 android:layout_height="26dp"
                 android:textAlignment="viewStart"
                 android:textSize="18sp"
+                android:textColor="#000000"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 

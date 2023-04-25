@@ -8,7 +8,7 @@
         tools:context=".CustomerSide.HomePageAdapter"
         android:id="@+id/card_view_3"
         android:layout_margin="5dp"
-        app:cardBackgroundColor="#FFFF99"
+        app:cardBackgroundColor="#6F8FAF"
         app:cardCornerRadius="12dp"
         app:cardElevation="3dp"
         app:contentPadding="4dp">

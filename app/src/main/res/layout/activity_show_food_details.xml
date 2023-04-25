@@ -41,6 +41,7 @@
             android:layout_marginTop="48dp"
             android:text="Food Name :       "
             android:textSize="16sp"
+            android:textColor="#000000"
             app:layout_constraintStart_toStartOf="@+id/background_rec"
             app:layout_constraintTop_toBottomOf="@+id/getFoodImage" />
 
@@ -52,6 +53,7 @@
             android:layout_marginTop="32dp"
             android:text="Price :       "
             android:textSize="16sp"
+            android:textColor="#000000"
             app:layout_constraintStart_toStartOf="@+id/background_rec"
             app:layout_constraintTop_toBottomOf="@+id/foodName" />
 
@@ -63,6 +65,7 @@
             android:layout_marginEnd="32dp"
             android:text="-"
             android:textSize="16sp"
+            android:textColor="#000000"
             app:layout_constraintEnd_toEndOf="@+id/background_rec"
             app:layout_constraintTop_toBottomOf="@+id/displayName" />
 
@@ -74,6 +77,7 @@
             android:layout_marginEnd="28dp"
             android:text="-"
             android:textSize="16sp"
+            android:textColor="#000000"
             app:layout_constraintEnd_toEndOf="@+id/background_rec"
             app:layout_constraintTop_toBottomOf="@+id/getFoodImage" />
 
@@ -118,6 +122,7 @@
             android:ems="10"
             android:hint="Enter number of order"
             android:inputType="numberDecimal"
+            android:textColor="#000000"
             app:layout_constraintBottom_toTopOf="@+id/confirmButton"
             app:layout_constraintEnd_toEndOf="@+id/background_rec" />
 

@@ -15,6 +15,7 @@
             android:layout_marginStart="6dp"
             android:layout_marginEnd="6dp"
             android:background="@drawable/background"
+            android:textColor="#000000"
             app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -38,6 +39,7 @@
             android:layout_marginBottom="60dp"
             android:text="Student ID :       "
             android:textSize="20sp"
+            android:textColor="#000000"
             app:layout_constraintBottom_toBottomOf="@+id/profileName"
             app:layout_constraintStart_toStartOf="@+id/background_rec" />
 
@@ -49,6 +51,7 @@
             android:layout_marginBottom="55dp"
             android:text="Name :       "
             android:textSize="20sp"
+            android:textColor="#000000"
             app:layout_constraintBottom_toBottomOf="@+id/profileEmail"
             app:layout_constraintStart_toStartOf="@+id/background_rec" />
 
@@ -60,6 +63,7 @@
             android:layout_marginBottom="61dp"
             android:text="Email :       "
             android:textSize="20sp"
+            android:textColor="#000000"
             app:layout_constraintBottom_toBottomOf="@+id/profilePhone"
             app:layout_constraintStart_toStartOf="@+id/background_rec" />
 
@@ -71,6 +75,7 @@
             android:layout_marginBottom="64dp"
             android:text="Phone No :       "
             android:textSize="20sp"
+            android:textColor="#000000"
             app:layout_constraintBottom_toBottomOf="@+id/profileWallet"
             app:layout_constraintStart_toStartOf="@+id/background_rec" />
 
@@ -82,6 +87,7 @@
             android:layout_marginBottom="116dp"
             android:text="Balance :       "
             android:textSize="20sp"
+            android:textColor="#000000"
             app:layout_constraintBottom_toBottomOf="@+id/background_rec"
             app:layout_constraintStart_toStartOf="@+id/background_rec" />
 

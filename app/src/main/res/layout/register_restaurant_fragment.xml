@@ -16,6 +16,7 @@
             android:layout_marginTop="100dp"
             android:layout_marginEnd="6dp"
             android:background="@drawable/background"
+            android:textColor="#000000"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.615"
@@ -63,6 +64,7 @@
             android:layout_marginTop="33dp"
             android:text="Email address :       "
             android:textSize="16sp"
+            android:textColor="#000000"
             app:layout_constraintStart_toStartOf="@+id/background_rec"
             app:layout_constraintTop_toBottomOf="@+id/profileOwner" />
 
@@ -74,6 +76,7 @@
             android:layout_marginTop="36dp"
             android:text="Owner Name :       "
             android:textSize="16sp"
+            android:textColor="#000000"
             app:layout_constraintStart_toStartOf="@+id/background_rec"
             app:layout_constraintTop_toBottomOf="@+id/profileName" />
 
@@ -85,6 +88,7 @@
             android:layout_marginTop="36dp"
             android:text="Phone Number :       "
             android:textSize="16sp"
+            android:textColor="#000000"
             app:layout_constraintStart_toStartOf="@+id/background_rec"
             app:layout_constraintTop_toBottomOf="@+id/profileEmail" />
 
@@ -96,6 +100,7 @@
             android:layout_marginTop="24dp"
             android:text="Wallet Balance :       "
             android:textSize="16sp"
+            android:textColor="#000000"
             app:layout_constraintStart_toStartOf="@+id/background_rec"
             app:layout_constraintTop_toBottomOf="@+id/profilePhone" />
 
@@ -107,6 +112,7 @@
             android:layout_marginTop="24dp"
             android:text="Restaurant Name :       "
             android:textSize="16sp"
+            android:textColor="#000000"
             app:layout_constraintStart_toStartOf="@+id/background_rec"
             app:layout_constraintTop_toBottomOf="@+id/profileID" />
 
@@ -118,6 +124,7 @@
             android:layout_marginTop="24dp"
             android:text="Restaurant ID :       "
             android:textSize="16sp"
+            android:textColor="#000000"
             app:layout_constraintStart_toStartOf="@+id/background_rec"
             app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -129,6 +136,7 @@
             android:layout_marginTop="452dp"
             android:text="Password :       "
             android:textSize="16sp"
+            android:textColor="#000000"
             app:layout_constraintStart_toStartOf="@+id/background_rec"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -140,6 +148,7 @@
             android:layout_marginTop="504dp"
             android:text="Confirm Password :       "
             android:textSize="16sp"
+            android:textColor="#000000"
             app:layout_constraintStart_toStartOf="@+id/background_rec"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -173,6 +182,7 @@
             android:layout_marginEnd="44dp"
             android:ems="10"
             android:hint="Name"
+            android:textColor="#000000"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/background_rec" />
@@ -186,6 +196,7 @@
             android:ems="10"
             android:hint="Email"
             android:inputType="textPersonName"
+            android:textColor="#000000"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/enterOwner" />
 
@@ -198,6 +209,7 @@
             android:ems="10"
             android:hint="Owner Name"
             android:inputType="textPersonName"
+            android:textColor="#000000"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/enterName" />
 
@@ -210,6 +222,7 @@
             android:ems="10"
             android:hint="Phone Number"
             android:inputType="textPersonName"
+            android:textColor="#000000"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/enterEmail" />
 
@@ -222,6 +235,7 @@
             android:ems="10"
             android:hint="Password"
             android:inputType="textPassword"
+            android:textColor="#000000"
             app:layout_constraintEnd_toEndOf="@+id/background_rec"
             app:layout_constraintTop_toBottomOf="@+id/enterPhone" />
 
@@ -234,6 +248,7 @@
             android:ems="10"
             android:hint="Confirm Password"
             android:inputType="textPassword"
+            android:textColor="#000000"
             app:layout_constraintEnd_toEndOf="@+id/background_rec"
             app:layout_constraintTop_toBottomOf="@+id/enterPass" />
 
@@ -243,6 +258,7 @@
             android:layout_height="76dp"
             android:layout_marginTop="23dp"
             android:layout_marginEnd="200dp"
+            android:textColor="#000000"
             app:layout_constraintEnd_toEndOf="@+id/background_rec"
             app:layout_constraintTop_toBottomOf="@+id/confirmPassword" />
 

@@ -10,7 +10,7 @@
         tools:context=".Student.StudentListAdapter"
         android:id="@+id/card_view_3"
         android:layout_margin="5dp"
-        app:cardBackgroundColor="#FFFF99"
+        app:cardBackgroundColor="#6F8FAF"
         app:cardCornerRadius="12dp"
         app:cardElevation="3dp"
         app:contentPadding="4dp">
@@ -29,6 +29,7 @@
                 android:layout_marginTop="29dp"
                 android:text="Wallet Balance : "
                 android:textSize="20sp"
+                android:textColor="#000000"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/card_phone" />
 
@@ -40,6 +41,7 @@
                 android:layout_marginTop="24dp"
                 android:textAlignment="viewStart"
                 android:textSize="18sp"
+                android:textColor="#000000"
                 app:layout_constraintStart_toEndOf="@+id/card_PhoneNumber"
                 app:layout_constraintTop_toBottomOf="@+id/card_EmailAdd" />
 
@@ -51,6 +53,7 @@
                 android:layout_marginTop="25dp"
                 android:text="Phone Number : "
                 android:textSize="20sp"
+                android:textColor="#000000"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/card_EmailAdd" />
 
@@ -62,6 +65,7 @@
                 android:layout_marginTop="28dp"
                 android:textAlignment="viewStart"
                 android:textSize="18sp"
+                android:textColor="#000000"
                 app:layout_constraintStart_toEndOf="@+id/card_EmailAdd"
                 app:layout_constraintTop_toBottomOf="@+id/card_StudName" />
 
@@ -73,6 +77,7 @@
                 android:layout_marginTop="27dp"
                 android:text="Email Address : "
                 android:textSize="20sp"
+                android:textColor="#000000"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/card_StudName" />
 
@@ -84,6 +89,7 @@
                 android:layout_marginTop="36dp"
                 android:textAlignment="viewStart"
                 android:textSize="18sp"
+                android:textColor="#000000"
                 app:layout_constraintStart_toEndOf="@+id/card_StudID"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -95,6 +101,7 @@
                 android:layout_marginTop="27dp"
                 android:text="Student Name : "
                 android:textSize="20sp"
+                android:textColor="#000000"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/card_StudID" />
 
@@ -106,6 +113,7 @@
                 android:layout_marginTop="24dp"
                 android:textAlignment="viewStart"
                 android:textSize="18sp"
+                android:textColor="#000000"
                 app:layout_constraintStart_toEndOf="@+id/card_StudName"
                 app:layout_constraintTop_toBottomOf="@+id/card_ID" />
 
@@ -117,6 +125,7 @@
                 android:layout_marginTop="32dp"
                 android:text="Student ID : "
                 android:textSize="20sp"
+                android:textColor="#000000"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -128,6 +137,7 @@
                 android:layout_marginTop="28dp"
                 android:textAlignment="viewStart"
                 android:textSize="18sp"
+                android:textColor="#000000"
                 app:layout_constraintStart_toEndOf="@+id/card_walletBalance"
                 app:layout_constraintTop_toBottomOf="@+id/card_phone" />
 
