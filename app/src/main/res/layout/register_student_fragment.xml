@@ -100,6 +100,7 @@
             android:layout_marginTop="36dp"
             android:text="Student Name :       "
             android:textSize="16sp"
+            android:textColor="#000000"
             app:layout_constraintStart_toStartOf="@+id/background_rec"
             app:layout_constraintTop_toBottomOf="@+id/profileID" />
 

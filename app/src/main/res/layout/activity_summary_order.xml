@@ -21,6 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="43dp"
         android:text="   Food Name"
+        android:textColor="#000000"
         android:textSize="20dp" />
 
     <TextView
@@ -37,6 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="43dp"
         android:text="   Food Price"
+        android:textColor="#000000"
         android:textSize="20dp" />
 
     <TextView
@@ -52,8 +54,10 @@
         android:id="@+id/fQty"
         android:layout_width="match_parent"
         android:layout_height="43dp"
+        android:textColor="#000000"
         android:text="   Order Quantity"
         android:textSize="20dp" />
+
 
     <TextView
         android:id="@+id/showQty"
@@ -75,6 +79,7 @@
         android:id="@+id/total"
         android:layout_width="match_parent"
         android:layout_height="43dp"
+        android:textColor="#000000"
         android:text="   Total Payment"
         android:textSize="20dp" />
 
