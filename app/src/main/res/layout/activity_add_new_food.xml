@@ -37,13 +37,13 @@
 
         <TextView
             android:id="@+id/displayID"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="3dp"
+            android:layout_height="17dp"
             android:layout_marginStart="48dp"
             android:layout_marginTop="24dp"
             android:text="-"
-            android:textSize="16sp"
             android:textColor="#000000"
+            android:textSize="48sp"
             app:layout_constraintStart_toEndOf="@+id/profileID"
             app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
