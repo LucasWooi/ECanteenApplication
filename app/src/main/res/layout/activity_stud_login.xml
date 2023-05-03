@@ -34,10 +34,11 @@
 
         <Button
             android:id="@+id/loginBtn"
-            android:layout_width="109dp"
-            android:layout_height="48dp"
+            android:layout_width="125dp"
+            android:layout_height="55dp"
             android:layout_marginStart="147dp"
             android:layout_marginTop="66dp"
+            android:backgroundTint="#49C69F"
             android:text="Login"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/studPass" />
@@ -57,10 +58,11 @@
 
         <Button
             android:id="@+id/regisBtn"
-            android:layout_width="111dp"
-            android:layout_height="49dp"
+            android:layout_width="125dp"
+            android:layout_height="55dp"
             android:layout_marginStart="147dp"
             android:layout_marginTop="14dp"
+            android:backgroundTint="#49C69F"
             android:text="Register"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/loginBtn" />
@@ -69,8 +71,9 @@
             android:id="@+id/forgotBtn"
             android:layout_width="125dp"
             android:layout_height="55dp"
-            android:layout_marginStart="140dp"
+            android:layout_marginStart="147dp"
             android:layout_marginTop="80dp"
+            android:backgroundTint="#E91E63"
             android:text="Forgot Password"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/loginBtn" />

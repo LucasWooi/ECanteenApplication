@@ -35,8 +35,8 @@
             android:id="@+id/backFromSalesButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Back"
-            android:backgroundTint="#0099FF"/>
+            android:backgroundTint="#E91E63"
+            android:text="Back" />
 
 
     </LinearLayout>

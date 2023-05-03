@@ -12,7 +12,7 @@
             android:id="@+id/addNewStudBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#0099FF"
+            android:backgroundTint="#49C69F"
             android:text="Add new student"
             tools:layout_editor_absoluteX="317dp"
             tools:layout_editor_absoluteY="0dp" />
@@ -30,8 +30,8 @@
             android:id="@+id/backFromStudButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Back"
-            android:backgroundTint="#0099FF"/>
+            android:backgroundTint="#E91E63"
+            android:text="Back" />
 
 
     </LinearLayout>

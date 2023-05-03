@@ -19,11 +19,12 @@
         <Button
             android:id="@+id/viewSalesBtn"
             android:layout_width="164dp"
-            android:layout_height="49dp"
+            android:layout_height="59dp"
             android:layout_marginStart="123dp"
             android:layout_marginTop="77dp"
+            android:backgroundTint="#17651A"
             android:text="Sales List"
-            android:backgroundTint="#0099FF"
+            app:cornerRadius="100px"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
@@ -33,8 +34,9 @@
             android:layout_height="59dp"
             android:layout_marginStart="123dp"
             android:layout_marginTop="35dp"
+            android:backgroundTint="#17651A"
             android:text="Food List"
-            android:backgroundTint="#0099FF"
+            app:cornerRadius="100px"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/viewSalesBtn" />
 
@@ -44,7 +46,7 @@
             android:layout_height="49dp"
             android:layout_marginStart="148dp"
             android:layout_marginTop="64dp"
-            android:backgroundTint="#0099FF"
+            android:backgroundTint="#E32F44"
             android:text="Log out"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/viewFoodBtn" />

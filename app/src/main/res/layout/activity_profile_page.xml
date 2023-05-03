@@ -165,7 +165,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
             android:layout_marginBottom="16dp"
-            android:backgroundTint="#0099FF"
+            android:backgroundTint="#49C69F"
             android:text="Update"
             app:layout_constraintBottom_toBottomOf="@+id/background_rec"
             app:layout_constraintStart_toStartOf="@+id/background_rec" />
@@ -176,7 +176,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="72dp"
             android:layout_marginBottom="16dp"
-            android:backgroundTint="#0099FF"
+            android:backgroundTint="#E91E63"
             android:text="Logout"
             app:layout_constraintBottom_toBottomOf="@+id/background_rec"
             app:layout_constraintEnd_toEndOf="@+id/background_rec" />
@@ -188,7 +188,7 @@
             android:layout_marginEnd="140dp"
             android:layout_marginBottom="68dp"
             android:text="Top Up"
-            app:backgroundTint="@null"
+            app:backgroundTint="#090909"
             app:layout_constraintBottom_toBottomOf="@+id/background_rec"
             app:layout_constraintEnd_toEndOf="@+id/background_rec" />
 

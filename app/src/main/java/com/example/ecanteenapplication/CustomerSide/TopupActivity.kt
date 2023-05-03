@@ -1,6 +1,7 @@
 package com.example.ecanteenapplication.CustomerSide
 
 import android.content.ContentValues
+import android.content.ContentValues.TAG
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -35,10 +36,10 @@ class TopupActivity : AppCompatActivity() {
             } else {
                 for (stud in Database.students) {
                     if (id == stud.getID()) {
-                        if(password != stud.getPassword()){
+                        if (password != stud.getPassword()) {
                             Toast.makeText(this, "Password Incorrect.", Toast.LENGTH_SHORT).show()
                             binding.enterPass.requestFocus()
-                        }else{
+                        } else {
                             val oldBalance = stud.getWalletBalance()
                             val newBalance = amount + oldBalance
                             val updateStudentData = mapOf(
@@ -48,26 +49,47 @@ class TopupActivity : AppCompatActivity() {
                             Database.db.collection("Student").document(id)
                                 .update(updateStudentData)
                                 .addOnSuccessListener {
-                                    Log.d(ContentValues.TAG, "DocumentSnapshot updated successfully!")
-                                }
-                                .addOnFailureListener {
-                                    Log.d(ContentValues.TAG,"Error update data",it)
-                                }
+                                    Log.d(
+                                        ContentValues.TAG,
+                                        "DocumentSnapshot updated successfully!"
+                                    )
 
-                            Toast.makeText(this,"Top up Successful!", Toast.LENGTH_LONG).show()
-                            val intent = Intent(this, ProfilePageActivity::class.java)
-                            intent.putExtra("getID",id)
-                            startActivity(intent)
+                                    // Fetch the updated data from the Firestore database
+                                     fun onResume() {
+                                        super.onResume()
+
+                                        val id = intent.getStringExtra("getID")
+                                        val docRef = Database.db.collection("Student").document(id.toString())
+
+                                        docRef.get().addOnSuccessListener { documentSnapshot ->
+                                            if (documentSnapshot != null) {
+                                                val balance = documentSnapshot.getDouble("WalletBalance")
+                                                Log.d(TAG, "Retrieved updated balance: $balance")
+                                                binding.topupAmount.text = String.format("%.2f", balance)
+                                            } else {
+                                                Log.d(TAG, "Document does not exist")
+                                            }
+                                        }.addOnFailureListener { exception ->
+                                            Log.d(TAG, "Error getting document: ", exception)
+                                        }
+                                    }
+
+                                    Toast.makeText(this, "Top up Successful!", Toast.LENGTH_LONG)
+                                        .show()
+                                    val intent = Intent(this, ProfilePageActivity::class.java)
+                                    intent.putExtra("getID", id)
+                                    startActivity(intent)
+                                }
                         }
                     }
                 }
             }
-        }
-        binding.cancelButton.setOnClickListener {
-            Toast.makeText(this,"Top up cancelled!", Toast.LENGTH_LONG).show()
-            val intent = Intent(this, ProfilePageActivity::class.java)
-            intent.putExtra("getID",id)
-            startActivity(intent)
+            binding.cancelButton.setOnClickListener {
+                Toast.makeText(this, "Top up cancelled!", Toast.LENGTH_LONG).show()
+                val intent = Intent(this, ProfilePageActivity::class.java)
+                intent.putExtra("getID", id)
+                startActivity(intent)
+            }
         }
     }
 }

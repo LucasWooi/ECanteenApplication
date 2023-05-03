@@ -147,7 +147,7 @@
             android:layout_marginStart="168dp"
             android:layout_marginBottom="12dp"
             android:text="Register"
-            app:backgroundTint="@null"
+            app:backgroundTint="#49C69F"
             app:layout_constraintBottom_toBottomOf="@+id/background_rec"
             app:layout_constraintStart_toStartOf="@+id/background_rec" />
 
@@ -158,7 +158,7 @@
             android:layout_marginStart="56dp"
             android:layout_marginBottom="12dp"
             android:text="Back"
-            app:backgroundTint="@null"
+            app:backgroundTint="#E91E63"
             app:layout_constraintBottom_toBottomOf="@+id/background_rec"
             app:layout_constraintStart_toStartOf="@+id/background_rec" />
 

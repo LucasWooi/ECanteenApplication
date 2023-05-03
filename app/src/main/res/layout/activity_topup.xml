@@ -59,18 +59,18 @@
             android:id="@+id/topupButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_gravity="center_horizontal"
-            android:backgroundTint="@color/black"
-            android:text="Top Up"/>
+            android:backgroundTint="#49C69F"
+            android:gravity="center"
+            android:text="Top Up" />
 
         <Button
             android:id="@+id/cancelButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_gravity="center_horizontal"
-            android:backgroundTint="@color/black"
-            android:text="Cancel"/>
+            android:backgroundTint="#E91E63"
+            android:gravity="center"
+            android:text="Cancel" />
     </LinearLayout>
 </layout>
