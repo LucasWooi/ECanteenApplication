@@ -49,6 +49,14 @@ class ResFoodListAdapter: RecyclerView.Adapter<ResFoodListAdapter.ViewHolder>() 
             holder.name.text = Database.foods[position].getName()
             holder.price.text = "RM " + Database.foods[position].getPrice().toString()
         }
+        else {
+            // No orders to display for this ResID
+            holder.name.text = "empty"
+            holder.price.text = ""
+
+            // Set visibility of card view to GONE
+            holder.itemView.visibility = View.GONE
+        }
     }
 
     override fun getItemCount(): Int {

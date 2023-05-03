@@ -1,5 +1,6 @@
 package com.example.ecanteenapplication.CustomerSide
 
+import android.content.ContentValues.TAG
 import android.graphics.BitmapFactory
 import android.util.Log
 import android.view.LayoutInflater
@@ -14,21 +15,22 @@ import com.google.firebase.storage.FirebaseStorage
 import java.io.File
 
 class OrderHistoryAdapter: RecyclerView.Adapter<OrderHistoryAdapter.ViewHolder>() {
+
     companion object{
         private var getStudID : String = ""
         private lateinit var activityActi : OrderHistoryActivity
         fun setFragment(getID: String,ActivityActi: OrderHistoryActivity){
-            getStudID = getID
-            Companion.activityActi = ActivityActi
+                getStudID = getID
+                Companion.activityActi = ActivityActi
         }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         // inflates the card_view_design view
         // that is used to hold list item
-        val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.card_layout_orderhistory, parent, false)
 
+            val view = LayoutInflater.from(parent.context)
+                .inflate(R.layout.card_layout_orderhistory, parent, false)
         return ViewHolder(view)
     }
 
@@ -46,7 +48,21 @@ class OrderHistoryAdapter: RecyclerView.Adapter<OrderHistoryAdapter.ViewHolder>(
             holder.price.text = "RM " + Database.orders[position].getPrice().toString()
             holder.qty.text = "Quantity: " + Database.orders[position].getQty().toString()
             holder.payAmo.text = "RM " + Database.orders[position].getPayment().toString()
+            if (holder.itemView.visibility != View.VISIBLE) {
+                holder.itemView.visibility = View.VISIBLE
+            }
         }
+        else {
+            // No orders to display for this student ID
+            holder.name.text = "empty"
+            holder.price.text = ""
+            holder.qty.text = ""
+            holder.payAmo.text = ""
+
+            // Set visibility of card view to GONE
+            holder.itemView.visibility = View.GONE
+        }
+
     }
 
     override fun getItemCount(): Int {

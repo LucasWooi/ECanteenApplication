@@ -24,6 +24,11 @@ class AddNewFoodActivity : AppCompatActivity() {
         binding = ActivityAddNewFoodBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val resID = intent.getStringExtra("getLogID")
+        binding.displayRes.setText(Database.restaurants[0].getID())
+        val foodCount: Int = Database.foods.size
+        val newID: Int = foodCount+1
+        val foodID = "FD" + newID
+        binding.displayID.setText(foodID)
 
 
         binding.selectImage.setOnClickListener {
@@ -35,10 +40,6 @@ class AddNewFoodActivity : AppCompatActivity() {
         }
 
         binding.addNewFoodBtn.setOnClickListener {
-            val foodCount: Int = Database.foods.size
-            val newID: Int = foodCount+1
-
-            val foodID = "FD" + newID
             val foodName = binding.enterName.text.toString()
             val foodPrice = Double.parseDouble(binding.enterPrice.text.toString())
             val fileName = "$foodID.jpg"

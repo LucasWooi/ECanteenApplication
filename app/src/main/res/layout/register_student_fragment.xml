@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
             android:layout_marginTop="24dp"
-            android:text="-"
+            android:text="@+id/studID"
             android:textSize="16sp"
             app:layout_constraintStart_toEndOf="@+id/profileID"
             app:layout_constraintTop_toBottomOf="@+id/imageView" />

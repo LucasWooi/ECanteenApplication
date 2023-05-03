@@ -27,6 +27,11 @@ class RegisterFromStudentActivity : AppCompatActivity() {
         setContentView(R.layout.activity_register_from_student)
         binding = ActivityRegisterFromStudentBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val studentCount: Int = Database.students.size
+        val newID: Int = studentCount+1
+        val studID = "ST000" + newID
+        binding.displayID.setText(studID)
+
 
         binding.imageButton5.isEnabled = false
 

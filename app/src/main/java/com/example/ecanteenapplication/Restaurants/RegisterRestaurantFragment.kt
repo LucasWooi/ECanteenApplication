@@ -26,7 +26,10 @@ class RegisterRestaurantFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = DataBindingUtil.inflate(inflater, R.layout.register_restaurant_fragment, container, false)
-
+        val restaurantCount: Int = Database.restaurants.size
+        val newID: Int = restaurantCount+1
+        val resID = "RES000" + newID
+        binding.displayID.setText(resID)
         binding.editImage.setOnClickListener {
             val intent = Intent()
             intent.type = "image/"
@@ -36,10 +39,6 @@ class RegisterRestaurantFragment : Fragment() {
         }
 
         binding.registerButton.setOnClickListener {
-            val restaurantCount: Int = Database.restaurants.size
-            val newID: Int = restaurantCount+1
-
-            val resID = "RES000" + newID
             val resName = binding.enterName.text.toString()
             val resOwner = binding.enterOwner.text.toString()
             val resEmail = binding.enterEmail.text.toString()
